@@ -1,0 +1,47 @@
+body {
+  background-color: #ffa4dc;
+}
+
+.content {
+  background-image: url("img/allstars.png");
+  background-size: contain;
+}
+.header {
+  color: black;
+  font-size: 100px;
+  text-align: center;
+  font-family: 'Chicle', cursive;
+
+}
+
+/* nav font */
+#nav-standin {
+  text-align: center;
+  font-family: 'Chicle', cursive;
+  font-size: 20px;
+}
+
+/* No link underlines! */
+a {
+  text-decoration: none;
+}
+
+/* Make navbar links lighter while hovering */
+#nav-standin a:hover {
+  opacity: .5;
+}
+
+#white {
+  color: white;
+  font-family: 'Chicle', cursive;
+}
+
+#red {
+  color: #ff3e13;
+  font-family: 'Chicle', cursive;
+}
+
+#blue {
+  color: #002eff;
+
+}

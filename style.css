@@ -1,24 +1,21 @@
 body {
   background-color: #ffa4dc;
+  padding: 0px;
+
 }
 
 .content {
   background-image: url("img/allstars.png");
   background-size: contain;
 }
-.header {
-  color: black;
-  font-size: 100px;
-  text-align: center;
-  font-family: 'Chicle', cursive;
 
-}
 
 /* nav font */
 #nav-standin {
   text-align: center;
   font-family: 'Chicle', cursive;
   font-size: 20px;
+  background-color: #ffa4dc;
 }
 
 /* No link underlines! */
@@ -43,5 +40,27 @@ a {
 
 #blue {
   color: #002eff;
+
+}
+.header {
+  width:100%;
+  text-align: center;
+  background-color: #ffa4dc;
+}
+.header a{
+  color: black;
+  font-size: 100px;
+  font-family: 'Modak', cursive;
+  text-shadow: 3px 3px #ffffff;
+  letter-spacing: 5px
+
+}
+
+.text {
+  text-align: center;
+  background-color: white;
+  font-family: 'Dosis', cursive;
+  margin: 100px;
+  padding: 5px;
 
 }

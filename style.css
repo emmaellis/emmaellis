@@ -5,21 +5,15 @@ body {
 }
 
 .content {
-  background-image: url("img/allstars.png");
-  background-size: contain;
+  /* background-image: url("img/allstars.png"); */
+  background-size: cover;
 }
 
-
-/* nav font */
-#nav-standin {
-  text-align: center;
-  font-family: 'Chicle', cursive;
-  font-size: 20px;
-  background-color: #ffa4dc;
-}
 
 /* No link underlines! */
 a {
+  margin: 15px;
+  color: black;
   text-decoration: none;
 }
 
@@ -28,20 +22,6 @@ a {
   opacity: .5;
 }
 
-#white {
-  color: white;
-  font-family: 'Chicle', cursive;
-}
-
-#red {
-  color: #ff3e13;
-  font-family: 'Chicle', cursive;
-}
-
-#blue {
-  color: #002eff;
-
-}
 .header {
   width:100%;
   text-align: center;
@@ -51,16 +31,35 @@ a {
   color: black;
   font-size: 100px;
   font-family: 'Modak', cursive;
-  text-shadow: 3px 3px #ffffff;
+  text-shadow: -4px -4px #c121ef, -8px -8px #ff3e13, -12px -12px #ff7a00, -16px -16px #ed8f00;
   letter-spacing: 5px
 
 }
 
 .text {
   text-align: center;
-  background-color: white;
-  font-family: 'Dosis', cursive;
+  font-family: 'Roboto', cursive;
   margin: 100px;
   padding: 5px;
+  font-size: 18px;
 
+}
+
+
+/* nav font */
+#nav-standin {
+  text-align: center;
+  font-family: 'Chicle', cursive;
+  font-size: 40px;
+  background-color: #ffa4dc;
+}
+
+strong {
+  font-weight: normal;
+  font-family: 'Chicle', cursive;
+  font-size: 25px;
+}
+
+b {
+  font-weight: bolder;
 }

@@ -29,16 +29,12 @@ body {
 }
 
 /* No link underlines! */
-#nav-standin a {
+.nav-standin a {
   margin: 15px;
   color: black;
   padding-left: 5px;
   padding-right: 5px;
   text-decoration: none;
-}
-
-/* nav font */
-#nav-standin a{
   text-align: center;
   font-family: 'Lexend Deca', sans-serif;
   font-size: 20px;
@@ -51,15 +47,14 @@ body {
 }
 
 /* Make navbar links lighter while hovering */
-#nav-standin a:hover {
+.nav-standin a:hover {
   background-color: black;
   color: #ffcfee;
 }
-.active {
-  background-color: black;
+.nav-standin a.active {
+  background-color: #ed6a5a;
   color: #ffcfee;
 }
-
 .text {
   text-align: center;
   font-family: 'Lexend Deca', sans-serif;

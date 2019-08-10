@@ -1,6 +1,6 @@
 body {
-  background-color: #ffa4dc;
-  padding: 0px;
+  background-color: #ffcfee;
+  text-align: center;
 
 }
 
@@ -9,57 +9,80 @@ body {
   background-size: cover;
 }
 
+/* Header style */
+.header {
+  width:100%;
+  text-align: center;
+  background-color: #ffcfee;
+}
+.header a{
+  color: black;
+  font-size: 70px;
+  font-family: 'Lexend Zetta', sans-serif;
+  letter-spacing: 0px;
+  text-decoration: none;
+  transition: .6s;
+}
+
+.header a:hover {
+  text-shadow: -12px -12px white;
+}
 
 /* No link underlines! */
-a {
+#nav-standin a {
   margin: 15px;
   color: black;
+  padding-left: 5px;
+  padding-right: 5px;
   text-decoration: none;
+}
+
+/* nav font */
+#nav-standin a{
+  text-align: center;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 20px;
+  background-color: #ffcfee;
+  font-style: italic;
+  transition: .4s;
+  padding-bottom: 3px;
+
+
 }
 
 /* Make navbar links lighter while hovering */
 #nav-standin a:hover {
-  opacity: .5;
+  background-color: black;
+  color: #ffcfee;
 }
-
-.header {
-  width:100%;
-  text-align: center;
-  background-color: #ffa4dc;
-}
-.header a{
-  color: black;
-  font-size: 100px;
-  font-family: 'Modak', cursive;
-  text-shadow: -4px -4px #c121ef, -8px -8px #ff3e13, -12px -12px #ff7a00, -16px -16px #ed8f00;
-  letter-spacing: 5px
-
+.active {
+  background-color: black;
+  color: #ffcfee;
 }
 
 .text {
   text-align: center;
-  font-family: 'Roboto', cursive;
-  margin: 100px;
-  padding: 5px;
-  font-size: 18px;
+  font-family: 'Lexend Deca', sans-serif;
+  padding-top: 40px;
+  font-size: 15px;
+  max-width: 650px;
+  margin: auto;
 
 }
 
-
-/* nav font */
-#nav-standin {
-  text-align: center;
-  font-family: 'Chicle', cursive;
-  font-size: 40px;
-  background-color: #ffa4dc;
-}
 
 strong {
   font-weight: normal;
-  font-family: 'Chicle', cursive;
-  font-size: 25px;
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-b {
-  font-weight: bolder;
+p {
+    text-align: center;
+
+}
+
+img {
+  margin-top: 8px;
 }

@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo|Faster+One|Chicle|Modak|Roboto">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexand+Deca|Lexend+Giga|Lexend+Zetta">
     <title>Emma Ellis | Projects</title>
     <link rel="stylesheet" href="style.css">
     <script type = "text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -10,40 +10,51 @@
   </head>
   <body class = "content">
     <div class = "header"><a href = "index.html">Emma Ellis</a></div>
-    <div id = "nav-standin"></div>
+    <div id = "nav-standin">  <div class="button-content">
+        <a class = "active" href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="about.html">About Me</a>
+      </div>
+    </div>
     <script>
     $(function(){
       $("#nav-standin").load("nav.html");
     });
     </script>
-    <div>
-      <div class = "text">
+    <img src = "img/squiggle.png" height = 20>
+    <div class = "text">
         <p>
-          <strong>Personal Website, Summer 2019</strong><br>
-          <b>HTML, CSS, Javascript</b><br>
+          <strong>Personal Website</strong><br>
+          Summer 2019<br>
+          HTML, CSS, Javascript<br>
           I designed and implemented the website you are currently viewing from scratch, self teaching HTML, CSS, and Javascript along the way. You can view the code for the website here.
         </p>
         <p>
-          <strong>Secure File Sharing System, Fall 2018</strong><br>
-          <b>Go, JSON</b><br>
+          <strong>Secure File Sharing System</strong><br>
+          Fall 2018<br>
+          Go, JSON<br>
           I designed a secure file store with a partner that used an AES-CFB encryption function and was capable of handling appends to existing files, sharing files with other users, and revoking access from other users.
         </p>
         <p>
-          <strong>Machine Learning: Neural Nets, Fall 2018</strong><br>
-          <b>Python</b><br>
+          <strong>Machine Learning: Neural Nets</strong><br>
+          Fall 2018<br>
+          Python<br>
           I implemented a binary perceptron, and designed various neural nets to approximate sin(x) over [-2pi, 2pi], classify handwritten digits from the MNIST dataset, and identify language of origin for a set of words.
         </p>
         <p>
-          <strong>Speedup, Spring 2018</strong><br>
-          <b>C</b><br>
-          I was given existing code for canny edge detection and was asked to enhance performance using loop unrolling, OpenMP, and code reorganization.
+          <strong>Speedup</strong><br>
+          Spring 2018<br>
+          C, OpenMP<br>
+          I was given existing code for canny edge detection applet and was asked to enhance performance using loop unrolling, OpenMP, and code reorganization.
         </p>
         <p>
-          <strong>Gitlet, Fall 2017</strong><br>
-          <b>Java</b><br>
-          I implemented a simplified version of Git which was capable of “committing”, restoring previous versions of files or commits, viewing log of past backups, maintaining “branches”, and merging changes from one branch to another.
+          <strong>Gitlet</strong><br>
+          Fall 2017<br>
+          Java<br>
+          I implemented a simplified applet of Git which was capable of “committing”, restoring previous versions of files or commits, viewing log of past backups, maintaining “branches”, and merging changes from one branch to another.
         </p>
-        </div>
-    </div>
+      </div>
   </body>
 </html>
+<!-- TODO: Use anchors to make the menu bar stay in place
+when scrolling, but the header disappear or become small -->

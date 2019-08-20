@@ -2,60 +2,85 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexand+Deca|Lexend+Giga|Lexend+Zetta">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend+Deca|Lexend+Giga|Lexend+Zetta&display=swap" rel = "stylesheet">
     <title>Emma Ellis | Projects</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projstyle.css">
     <script type = "text/javascript" src = "site.js"></script>
   </head>
   <body>
+    <!-- Upper navbar/header -->
+    <div class = navbar>
+      <!-- Header -->
+      <div class = "header"><a class = "headerA" href = "index.html">Emma Ellis</a></div>
 
-    <!-- Header -->
-    <div class = "header"><a href = "index.html">Emma Ellis</a></div>
+      <!-- Navbar -->
+      <div class = "nav-standin">
+        <a class = "active" href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="about.html">About Me</a>
+      </div>
 
-    <!-- Navbar -->
-    <div class = "nav-standin">
-      <a class = "active" href="projects.html">Projects</a>
-      <a href="resume.html">Resume</a>
-      <a href="about.html">About Me</a>
+      <!-- Squiggle divider img -->
+      <img src = "img/squiggle.png" height = "60">
     </div>
-
-    <!-- Squiggle divider img -->
-    <img src = "img/squiggle.png" height = 20>
 
     <!-- Content -->
     <div class = "text">
+        <h3><div class = "background">Personal Website</div></h3>
+        <h4>Summer 2019</h4>
         <p>
-          <strong>Personal Website</strong><br>
-          Summer 2019<br>
-          HTML, CSS, Javascript<br>
-          I designed and implemented the website you are currently viewing from scratch, self teaching HTML, CSS, and Javascript along the way. You can view the code for the website here.
+          I designed and implemented the website you are currently viewing from
+          scratch, self teaching HTML, CSS, and Javascript along the way.
+          You can view the code for this website <a href = "https://github.com/emmaellis/emmaellis">here</a>.
         </p>
+        <span class = "skills">HTML</span>
+        <span class = "skills">CSS</span>
+        <span class = "skills">Javascript</span>
+        <br>
+
+        <h3><div class = "background">Secure File Sharing System</div></h3>
+        <h4>Fall 2018</h4>
         <p>
-          <strong>Secure File Sharing System</strong><br>
-          Fall 2018<br>
-          Go, JSON<br>
-          I designed a secure file store with a partner that used an AES-CFB encryption function and was capable of handling appends to existing files, sharing files with other users, and revoking access from other users.
+          I designed a secure file store with a partner that used an AES-CFB
+          encryption function and was capable of handling appends to existing files,
+          sharing files with other users, and revoking access from other users.
         </p>
+        <span class = "skills">Go</span>
+        <span class = "skills">JSON</span>
+        <br>
+
+        <h3><div class = "background">Machine Learning: Neural Nets</div></h3>
+        <h4>Fall 2018</h4>
         <p>
-          <strong>Machine Learning: Neural Nets</strong><br>
-          Fall 2018<br>
-          Python<br>
-          I implemented a binary perceptron, and designed various neural nets to approximate sin(x) over [-2pi, 2pi], classify handwritten digits from the MNIST dataset, and identify language of origin for a set of words.
+          I implemented a binary perceptron, and designed various neural nets
+          to approximate sin(x) over [-2pi, 2pi], classify handwritten digits from
+          the MNIST dataset, and identify language of origin for a set of words.
         </p>
+        <span class = "skills">Python</span>
+        <br>
+
+        <h3><div class = "background">Speedup</div></h3>
+        <h4>Spring 2018</h4>
         <p>
-          <strong>Speedup</strong><br>
-          Spring 2018<br>
-          C, OpenMP<br>
-          I was given existing code for canny edge detection applet and was asked to enhance performance using loop unrolling, OpenMP, and code reorganization.
+          I was given existing code for canny edge detection applet and was asked
+          to enhance performance using loop unrolling, OpenMP, and code reorganization.
         </p>
-        <p>
-          <strong>Gitlet</strong><br>
-          Fall 2017<br>
-          Java<br>
-          I implemented a simplified applet of Git which was capable of “committing”, restoring previous versions of files or commits, viewing log of past backups, maintaining “branches”, and merging changes from one branch to another.
+        <span class = "skills">C</span>
+        <span class = "skills">OpenMP</span>
+        <br>
+
+          <h3><div class = "background">Gitlet</div></h3>
+          <h4>Fall 2017</h4>
+          <p>
+          I implemented a simplified applet of Git which was capable of
+          “committing”, restoring previous versions of files or commits,
+          viewing log of past backups, maintaining “branches”, and merging
+          changes from one branch to another.
         </p>
+        <span class = "skills">Java</span>
+        <br>
+        <br>
       </div>
   </body>
 </html>
-<!-- TODO: Use anchors to make the menu bar stay in place
-when scrolling, but the header disappear or become small -->

@@ -4,17 +4,18 @@ body {
 
 }
 
-.content {
-  /* background-image: url("img/allstars.png"); */
-  background-size: cover;
+a{
+color: black;
 }
 
 /* Header style */
 .header {
   width:100%;
   text-align: center;
+  float: none;
   background-color: #ffcfee;
 }
+
 .header a{
   color: black;
   font-size: 70px;
@@ -26,6 +27,20 @@ body {
 
 .header a:hover {
   text-shadow: -12px -12px white;
+}
+
+.navbar {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+}
+
+.nav-standin {
+  background-color: #ffcfee;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+  transition: .6s;
 }
 
 /* No link underlines! */
@@ -40,7 +55,6 @@ body {
   font-size: 20px;
   background-color: #ffcfee;
   font-style: italic;
-  transition: .4s;
   padding-bottom: 3px;
 
 
@@ -51,33 +65,49 @@ body {
   background-color: black;
   color: #ffcfee;
 }
+
 .nav-standin a.active {
   background-color: #ed6a5a;
   color: #ffcfee;
 }
+
 .text {
   text-align: center;
-  font-family: 'Lexend Deca', sans-serif;
   padding-top: 40px;
-  font-size: 15px;
   max-width: 650px;
   margin: auto;
+  margin-top: 100px;
 
-}
-
-
-strong {
-  font-weight: normal;
-  font-family: 'Lexend Giga', sans-serif;
-  font-size: 20px;
-  font-weight: bold;
 }
 
 p {
-    text-align: center;
+  font-size: 15px;
+  text-align: left;
+  font-family: 'Lexend Deca', Arial, sans-serif;
+  margin-top: 0em;
+}
 
+h3 {
+  font-family: 'Lexend Giga', Arial, sans-serif;
+  text-align: left;
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 0em;
+}
+
+h4{
+  font-family: 'Lexend Deca', Arial, sans-serif;
+  font-weight: normal;
+  text-align: left;
+  font-style: italic;
+  font-size: 14px;
+  margin-top: .2em;
+  margin-bottom: .2em;
 }
 
 img {
-  margin-top: 8px;
+  margin-top: 0px;
+  display: block;
+  overflow-x: hidden;
+  left: 0px;
 }

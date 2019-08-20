@@ -1,0 +1,10 @@
+span.skills {
+  border: 2px solid;
+  font-family: 'Lexend Deca', Arial, sans-serif;
+  font-size: 12px;
+  text-align: left;
+  float: left;
+  margin-left: 5px;
+  margin-bottom: 0em;
+  padding: 1px;
+}

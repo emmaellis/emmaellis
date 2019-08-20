@@ -1,0 +1,16 @@
+h3 {
+  font-size: 24px;
+}
+ul.coursework {
+  font-family: 'Lexend Deca', sans-serif;
+  list-style: circle;
+  text-align: left;
+  font-weight: normal;
+  font-size: 16px;
+  float: right;
+}
+
+li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

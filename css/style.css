@@ -110,6 +110,7 @@ img {
   display: block;
   overflow-x: hidden;
   left: 0px;
+  width: 100%;
 }
 
 #footer {

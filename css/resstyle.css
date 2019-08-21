@@ -14,7 +14,8 @@ h4 {
 }
 ul.coursework {
   font-family: 'Lexend Deca', sans-serif;
-  list-style: circle;
+  /* font-family: 'Cutive Mono', monospace; */
+  list-style: initial;
   text-align: left;
   font-weight: normal;
   font-size: 15px;

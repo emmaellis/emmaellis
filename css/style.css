@@ -20,7 +20,8 @@ color: black;
   color: black;
   font-size: 70px;
   font-family: 'Lexend Zetta', sans-serif;
-  letter-spacing: 0px;
+  /* font-family: 'Rozha One', serif; */
+  letter-spacing: 4px;
   text-decoration: none;
   transition: .6s;
 }
@@ -56,6 +57,7 @@ color: black;
   background-color: #ffcfee;
   font-style: italic;
   padding-bottom: 3px;
+  transition: .4s;
 
 
 }

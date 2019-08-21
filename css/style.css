@@ -111,3 +111,8 @@ img {
   overflow-x: hidden;
   left: 0px;
 }
+
+#footer {
+  font-family: 'Lexend Deca', Arial, sans-serif;
+  font-size: 12px;
+}

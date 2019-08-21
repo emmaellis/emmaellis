@@ -1,10 +1,16 @@
 h3 {
   font-size: 24px;
   margin-bottom: 15px;
+  text-align: center;
+  font-style: normal;
 }
 
 h4 {
-
+  font-family: 'Lexend Exa', Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0em;
 }
 ul.coursework {
   font-family: 'Lexend Deca', sans-serif;
@@ -18,4 +24,18 @@ ul.coursework {
 li {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+span.skills {
+  border: 2px solid;
+  font-family: 'Lexend Deca', Arial, sans-serif;
+  font-size: 15px;
+  text-align: left;
+  margin-left: 5px;
+  margin-bottom: 0em;
+  padding: 1px;
+}
+
+.center {
+  text-align: center;
 }

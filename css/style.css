@@ -107,12 +107,13 @@ h4{
   margin-bottom: .2em;
 }
 
-img {
+#line {
   margin-top: 0px;
   display: block;
   overflow-x: hidden;
   left: 0px;
-  width: 100%;
+  /* width: 100%; */
+  height: 8vh;
 }
 
 #footer {

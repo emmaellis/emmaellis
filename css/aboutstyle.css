@@ -1,0 +1,13 @@
+p {
+font-family: 'Lexend Deca', sans-serif;
+}
+
+.text {
+  margin-top: 150px;
+
+}
+
+#face {
+  height: 60vh;
+  float: left;
+}

@@ -1,8 +1,10 @@
 h3 {
-  font-size: 24px;
+  font-size: 26px;
   margin-bottom: 15px;
   text-align: center;
   font-style: normal;
+  letter-spacing: 4px;
+  font-style: bold;
 }
 
 h4 {
@@ -33,7 +35,7 @@ span.skills {
   font-size: 15px;
   text-align: left;
   margin-left: 5px;
-  margin-bottom: 0em;
+  margin-bottom: 5px;
   padding: 1px;
 }
 

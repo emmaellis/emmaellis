@@ -1,29 +1,114 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexand+Deca|Lexend+Giga|Lexend+Zetta">
-    <title>Emma Ellis</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script type = "text/javascript" src = "js/site.js"></script>
-  </head>
-  <body>
-    <!-- Upper navbar/header -->
-    <div class = navbar>
-      <!-- Header -->
-      <div class = "header"><a class = "headerA" href = "index.html">Emma Ellis</a></div>
+<html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend+Deca|Lexend+Giga|Lexend+Zetta&display=swap" rel = "stylesheet">
+  <style>
+    body {
+      background-color: #ffcfee;
+    }
 
-      <!-- Navbar -->
-      <div class = "nav-standin">
-        <a href="projects.html">Projects</a>
-        <a href="resume.html">Resume</a>
-        <a href="about.html">About Me</a>
-      </div>
+    .animate {
+      text-align: center;
+      position: relative;
+    }
 
-      <!-- Squiggle divider img -->
-      <img id = "line" src = "img/squiggle.png">
-    </div>
-    <!-- Footer -->
-    <span id = "footer">© 2019 Emma Ellis</span>
-  </body>
+    @namespace svg url(http://www.w3.org/2000/svg);
+
+    .txt {
+      z-index: 10;
+      font-family: 'Lexend Giga', sans-serif;
+      fill: black;
+      font-size:16px;
+      cursor: pointer;
+    }
+
+    .btn:hover .box{
+      fill: black;
+    }
+
+    .btn:hover .txt{
+
+      fill: #ffcfee;
+    }
+
+    .box {
+      stroke:black;
+      stroke-width: 2;
+      fill: #ffcfee;
+
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div class = "animate">
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <svg id = "imac" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="100vw" height="100vh"><defs>
+      <path id="screen" d="M119.79 108.07C119.79 108.07 119.79 108.07 119.79 108.07C214.74 95.66 310.47 90.15 406.22 91.6C409.69 91.65 418.35 91.78 432.22 91.99C429.77 103.4 428.23 110.53 427.62 113.38C406.98 209.26 393.54 306.54 387.43 404.43C387.43 404.43 387.43 404.43 387.43 404.43C377.27 403.48 370.92 402.9 368.38 402.66C368.38 402.66 66.95 392.94 66.95 392.94C66.95 392.94 66.95 392.94 66.95 392.94C67.43 387.77 67.73 384.54 67.85 383.24C76.47 290.09 93.86 197.96 119.79 108.07C119.79 108.07 119.79 108.07 119.79 108.07Z"></path>
+      <path  id="back" d="M489.89 74.02C492.12 64.62 500.32 57.85 509.97 57.42C512.61 57.3 506.71 57.56 509.97 57.42C518.04 57.07 525.59 61.38 529.39 68.51C538.12 84.92 534.93 78.92 537.86 84.44C537.86 84.44 601.67 219.78 601.67 219.78C606.26 230.87 595.95 205.94 601.67 219.78C616.59 255.86 619.94 295.67 611.24 333.73C611.24 333.76 613.92 322.03 611.24 333.73C611.22 333.83 611.17 333.92 611.09 333.99C601.26 342.8 606.99 337.67 605.93 338.61C576.68 364.83 544.61 387.73 510.31 406.87C499.86 412.71 495.43 415.18 478.8 424.46C465.05 432.13 450.18 437.59 434.73 440.64C434.73 440.64 434.73 440.64 434.73 440.64C435.38 431.7 435.79 426.11 435.95 423.87C444.55 306 462.58 189.01 489.89 74.02C490.64 70.84 481.68 108.57 489.89 74.02Z"></path>
+      <path id="top" d="M432.22 441.76L27.09 424.53C27.09 424.53 27.09 424.53 27.09 424.53C36.46 311.8 59.16 200.58 94.71 93.19C96.12 88.93 87.71 114.33 99.34 79.2C100.84 74.66 104.59 71.21 109.24 70.08C146.8 60.99 107.74 70.44 109.24 70.08C233.25 40.07 361.9 34.35 488.09 53.23C491.79 53.79 501.06 55.17 515.89 57.39"></path>
+      <path id="rspeaker" d="M397.93 490.66C397.93 512.37 382.96 525.41 363.1 525.41C343.25 525.41 322.53 507.78 322.53 486.06C322.53 464.35 343.25 456.89 363.1 456.89C382.96 456.89 397.93 468.95 397.93 490.66Z"></path>
+      <path id="lspeaker" d="M82.97 473.24C82.97 490.62 70.97 504.73 56.18 504.73C41.4 504.73 29.39 490.62 29.39 473.24C29.39 455.87 41.4 441.76 56.18 441.76C70.97 441.76 82.97 455.87 82.97 473.24Z"></path>
+      <path id="disk" d="M271.32 448.67C274.21 448.78 276.47 451.21 276.36 454.1C276.24 457.24 276.09 461.43 275.97 464.57C275.86 467.46 273.43 469.71 270.54 469.61C239.63 468.45 152.15 465.18 121.24 464.03C118.35 463.92 116.09 461.49 116.2 458.6C116.32 455.46 116.48 451.27 116.59 448.13C116.7 445.24 119.13 442.98 122.02 443.09C152.93 444.25 240.41 447.51 271.32 448.67Z"></path>
+      <path id="bottom" d="M615.2 278.65C615.2 278.65 615.2 278.65 615.2 278.65C618.98 312.61 614.52 346.98 602.21 378.85C597 392.35 602.11 379.11 597.4 391.3C583.33 427.76 563.46 461.71 538.56 491.84C536.43 494.42 546.08 482.74 538.56 491.84C531.47 500.42 523.74 508.46 515.44 515.87C509.66 521.04 509.84 520.87 505.33 524.91C493.24 535.72 477.59 541.69 461.37 541.69C458.61 541.69 451.68 541.69 440.61 541.69L393.62 538.07C223.88 525.01 117.8 516.84 75.37 513.57C64.93 512.77 54.58 511.03 44.44 508.37C40.31 507.29 47.49 509.17 44.44 508.37C32.38 505.21 24.15 494.07 24.68 481.61C25 474 25.81 454.97 27.09 424.53"></path>
+    </defs><g><g><g>
+      <use xlink:href="#screen" opacity="1" fill="#f9f9f9" fill-opacity="0"></use><g>
+      <use xlink:href="#screen" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="4" stroke-opacity="1"></use></g></g><g>
+      <use xlink:href="#back" opacity="1" fill="#000000" fill-opacity="1"></use><g>
+      <use xlink:href="#back" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="5" stroke-opacity="1"></use></g></g><g><g>
+      <use xlink:href="#top" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="4" stroke-opacity="1"></use></g></g><g>
+      <use xlink:href="#rspeaker" opacity="1" fill="#000000" fill-opacity="1"></use></g><g>
+      <use xlink:href="#lspeaker" opacity="1" fill="#000000" fill-opacity="1"></use></g><g>
+      <use xlink:href="#disk" opacity="1" fill="#000000" fill-opacity="1"></use></g><g><g>
+      <use xlink:href="#bottom" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="5" stroke-opacity="1"></use></g></g></g></g>
+
+      <a href="projects.html" class="btn" id="proj">
+        <rect id="b1" class="box" x="148" y="139"  width="92" height="22"/>
+        <text id="t1" class="txt" x="150" y="155">projects</text>
+      </a>
+      <a class="btn" id="res" href = "resume.html">
+        <rect id="b2" class="box" x="200" y="239" width="82" height="22"/>
+        <text id="t2" class = "txt" x="202" y="255">resume</text>
+      </a>
+      <a class="btn"about" id="about" href = "about.html">
+        <rect id="b3" class="box" x="250" y="339" width="104" height="22"/>
+        <text id="t3" class = "txt" x="252" y="355">about me</text>
+      </a>
+    </svg>
+
+  </div>
+  <script>
+
+    var topt = new TimelineMax();
+    var backt = new TimelineMax();
+    var speakerst = new TimelineMax();
+    var bottomt = new TimelineMax();
+    var screent = new TimelineMax();
+    var navt = new TimelineMax();
+
+    screent.set('#b1', {x:-200, y: -50})
+    screent.set('#t1', {x: 200, y: -50})
+    screent.set('#b2', {x:-300, y: -400})
+    screent.set('#t2', {x: 300, y: 400})
+    screent.set('#b3', {x:300, y: 200})
+    screent.set('#t3', {x: -300, y: -300})
+    screent.set('#screen', {y: -200});
+    topt.set('#top', {x: -100, y: -150});
+    backt.set('#back', {x: 100, y: -130});
+    speakerst.set('#rspeaker', {x: -100, y: 100});
+    speakerst.set('#lspeaker', {x: 100, y: 200});
+    speakerst.set('#disk', {y: -100});
+    bottomt.set('#bottom', {x: 100, y: 100});
+
+    topt.to('#top', 2, {x: 0, y: 0});
+    screent.to('#screen, #t1, #b1, #t2, #b2, #t3, #b3', 2.5, {x:0, y: 0});
+    backt.to('#back', 2, {x:0, y: 0});
+    speakerst.to('#rspeaker, #lspeaker, #disk', 2, {x:0, y: 0});
+    bottomt.to('#bottom', 2, {x:0, y: 0});
+
+  </script>
+</body>
 </html>

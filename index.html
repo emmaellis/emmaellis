@@ -44,7 +44,7 @@
       font-size: 50px;
       text-anchor: middle;
       text-shadow: -10px -10px #ed6a5a;
-      text-shadow: -5px -5px white;
+      text-shadow: -5px -5px white, -6px -6px white, -7px -7px white, -8px -8px white;
     }
 
   </style>
@@ -85,16 +85,16 @@
         <rect id="b3" class="box" x="250" y="339" width="104" height="22"/>
         <text id="t3" class = "txt" x="252" y="355">about me</text>
       </a>
-      <text class="name" x="-60" y="150">E</text>
-      <text class="name" x="-60" y="250">m</text>
-      <text class="name" x="-60" y="350">m</text>
-      <text class="name" x="-60" y="450">a</text>
+      <text class="name" id="n1" x="-60" y="150">E</text>
+      <text class="name" id="n2" x="-60" y="250">m</text>
+      <text class="name" id="n3" x="-60" y="350">m</text>
+      <text class="name" id="n4" x="-60" y="450">a</text>
 
-      <text class="name" x="700" y="100">E</text>
-      <text class="name" x="700" y="200">l</text>
-      <text class="name" x="700" y="300">l</text>
-      <text class="name" x="700" y="400">i</text>
-      <text class="name" x="700" y="500">s</text>
+      <text class="name" id="n5" x="700" y="100">E</text>
+      <text class="name" id="n6" x="700" y="200">l</text>
+      <text class="name" id="n7" x="700" y="300">l</text>
+      <text class="name" id="n8" x="700" y="400">i</text>
+      <text class="name" id="n9" x="700" y="500">s</text>
     </svg>
 <!-- mobile version should be top and bottom -->
   </div>
@@ -107,6 +107,15 @@
     var screent = new TimelineMax();
     var navt = new TimelineMax();
 
+    var chars = document.getElementsByClassName("name");
+    var coords = [-700, 700, -50, 50, 200, -200];
+    for (var i = 0; i < chars.length; i++) {
+      var rand1 = coords[Math.floor(Math.random() * coords.length)];
+      var rand2 = coords[Math.floor(Math.random() * coords.length)];
+      console.log(rand1);
+      screent.set('#'+chars[i].id, {x: rand1, y: rand2});
+
+    }
     screent.set('#b1', {x:-200, y: -50})
     screent.set('#t1', {x: 200, y: -50})
     screent.set('#b2', {x:-300, y: -400})
@@ -122,7 +131,7 @@
     bottomt.set('#bottom', {x: 100, y: 100});
 
     topt.to('#top', 2, {x: 0, y: 0});
-    screent.to('#screen, #t1, #b1, #t2, #b2, #t3, #b3', 2.5, {x:0, y: 0});
+    screent.to('#screen, #t1, #b1, #t2, #b2, #t3, #b3, .name', 2.5, {x:0, y: 0});
     backt.to('#back', 2, {x:0, y: 0});
     speakerst.to('#rspeaker, #lspeaker, #disk', 2, {x:0, y: 0});
     bottomt.to('#bottom', 2, {x:0, y: 0});
